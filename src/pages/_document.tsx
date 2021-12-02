@@ -14,6 +14,10 @@ class Document extends NextDocument {
     return (
       <Html lang="en">
         <Head>
+          <meta
+            name="google-site-verification"
+            content="WNET4076-_0hUtDN3cCz2PnPWvUgjG6fxlQCBVdmZR8"
+          />
           <link
             rel="preconnect"
             href="https://fonts.gstatic.com"
