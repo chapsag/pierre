@@ -1,4 +1,4 @@
-const siteUrl = 'https://app.goffi.dev'
+const siteUrl = 'https://goffi.dev'
 
 module.exports = {
   siteUrl,
