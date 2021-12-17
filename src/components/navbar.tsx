@@ -17,6 +17,7 @@ import {
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
 import { IoLogoGithub } from 'react-icons/io5'
+import { SiNotion } from 'react-icons/si'
 
 type LinkItemProps = {
   path: string
@@ -93,6 +94,19 @@ const Navbar = (props: NavbarProps) => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
+          <LinkItem
+            _target="_blank"
+            rel="noopener noreferrer"
+            href="https://pear-avatar-310.notion.site/Pierre-Emmanuel-Goffi-df46b43694cc4df7bf72c70ab54e3119"
+            path={path}
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            pl={2}
+          >
+            <SiNotion />
+            C.V
+          </LinkItem>
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>

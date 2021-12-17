@@ -57,14 +57,13 @@ const Page = () => {
         </Box>
         <Section delay={0.1}>
           <Heading as="h3" variant="section-title" mt={{ md: 5 }}>
-            Work
+            About
           </Heading>
           <Paragraph>
-            I am a student in Computer Vision at University of Sherbrooke and
-            Entrepreneur based in Montreal with two years experience in the
-            software industry. I joined a company called piknix in 2021. We are
-            currently working on a groceries delivery application. Check out my
-            Portfolio !
+            Hi, I hope you doing great. I am cofounder and full-stack developer,
+            at piknix. I specialize myself in AI-enabled cloud applications. I
+            am a student in Computer Vision at université de Sherbrooke. I
+            currently live in Montréal, QC.
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/works">
@@ -80,7 +79,11 @@ const Page = () => {
           </Heading>
           <BioSection>
             <BioYear>1996</BioYear>
-            Born in Belgium, I moved to Canada in 2016.
+            Born in Belgium.
+          </BioSection>
+          <BioSection>
+            <BioYear>2016</BioYear>
+            Moved to Montréal, Canada.
           </BioSection>
           <BioSection>
             <BioYear>2021</BioYear>
