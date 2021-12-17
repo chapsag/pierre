@@ -113,7 +113,7 @@ const Navbar = (props: NavbarProps) => {
           <LinkItem
             _target="_blank"
             rel="noopener noreferrer"
-            href="https://github.com/chapsag/portfolio"
+            href="https://github.com/chapsag/pierre"
             path={path}
             display="inline-flex"
             alignItems="center"
