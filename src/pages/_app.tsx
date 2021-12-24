@@ -7,6 +7,7 @@ import theme from '../lib/theme'
 import Fonts from '../lib/fonts'
 import { useEffect } from 'react'
 import TagManager from 'react-gtm-module'
+import { Container } from '@chakra-ui/react'
 
 const Portfolio = ({
   Component,
@@ -14,17 +15,21 @@ const Portfolio = ({
   router
 }: AppProps): ReactElement => {
   useEffect(() => {
-    TagManager.initialize({ gtmId: 'GTM-N3WVPBB' })
+    TagManager.initialize({ gtmId: process.env.GTM })
   }, [])
   return (
-    <ChakraProvider theme={theme}>
-      <Fonts />
-      <Layout router={router}>
-        <AnimatePresence exitBeforeEnter initial={true}>
-          <Component {...pageProps} key={router.route} />
-        </AnimatePresence>
-      </Layout>
-    </ChakraProvider>
+    <Container
+      style={{ position: 'relative', width: '100vh', height: '100vw' }}
+    >
+      <ChakraProvider theme={theme}>
+        <Fonts />
+        <Layout router={router}>
+          <AnimatePresence exitBeforeEnter initial={true}>
+            <Component {...pageProps} key={router.route} />
+          </AnimatePresence>
+        </Layout>
+      </ChakraProvider>
+    </Container>
   )
 }
 

@@ -16,7 +16,7 @@ class Document extends NextDocument {
         <Head>
           <meta
             name="google-site-verification"
-            content="WNET4076-_0hUtDN3cCz2PnPWvUgjG6fxlQCBVdmZR8"
+            content={process.env.GOOGLE_VERIFICATION}
           />
           <link
             rel="preconnect"
