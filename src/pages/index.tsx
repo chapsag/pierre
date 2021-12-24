@@ -14,7 +14,6 @@ import QRcode from '../components/qr-code'
 import NextLink from 'next/link'
 import NoSsr from '../components/utils/no-ssr'
 import SkylineGithub from '../components/skyline-github'
-import { IoLogoGithub } from 'react-icons/io'
 
 const Page = () => {
   return (
