@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import { useState } from 'react'
-import { Image, Text, Container, LinkBox } from '@chakra-ui/react'
+import { Image } from '@chakra-ui/react'
 
 const variants = {
   open: { opacity: 1, x: 0 },
