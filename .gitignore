@@ -1,7 +1,7 @@
 .yarn
 node_modules
 .next
-.idea.txt
+.env.local
 
 /public/robots.txt
 /public/sitemap.xml
