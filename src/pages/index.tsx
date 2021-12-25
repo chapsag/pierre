@@ -59,10 +59,10 @@ const Page = () => {
             About
           </Heading>
           <Paragraph>
-            Hi, I hope you doing great. I am cofounder and full-stack developer,
-            at piknix. I specialize myself in AI-enabled cloud applications. I
-            am a student in Computer Vision at université de Sherbrooke. I
-            currently live in Montréal, QC.
+            Hi, I hope you&apos;re doing well. I am cofounder and full-stack
+            developer, at piknix. I specialize myself in AI-enabled cloud
+            applications. I am a student in Computer Vision at université de
+            Sherbrooke. I currently live in Montréal, QC.
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/works">
