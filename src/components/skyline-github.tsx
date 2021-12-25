@@ -104,7 +104,7 @@ const SkylineGithub = () => {
       w={[280, 480, 480]}
       h={[280, 480, 480]}
       maxH={['100', '200', '300']}
-      maxW={['100', '400', '500']}
+      maxW={['200', '400', '500']}
       position="relative"
       border={['1px solid', '2px solid', '3px solid']}
       borderColor="gray.200"
