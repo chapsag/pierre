@@ -18,18 +18,14 @@ const Portfolio = ({
     TagManager.initialize({ gtmId: process.env.GTM })
   }, [])
   return (
-    <Container
-      style={{ position: 'relative', width: '100vh', height: '100vw' }}
-    >
-      <ChakraProvider theme={theme}>
-        <Fonts />
-        <Layout router={router}>
-          <AnimatePresence exitBeforeEnter initial={true}>
-            <Component {...pageProps} key={router.route} />
-          </AnimatePresence>
-        </Layout>
-      </ChakraProvider>
-    </Container>
+    <ChakraProvider theme={theme}>
+      <Fonts />
+      <Layout router={router}>
+        <AnimatePresence exitBeforeEnter initial={true}>
+          <Component {...pageProps} key={router.route} />
+        </AnimatePresence>
+      </Layout>
+    </ChakraProvider>
   )
 }
 
