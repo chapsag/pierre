@@ -12,7 +12,6 @@ import Layout from '../components/layouts/article'
 import { BioSection, BioYear } from '../components/bio'
 import QRcode from '../components/qr-code'
 import NextLink from 'next/link'
-import NoSsr from '../components/utils/no-ssr'
 import SkylineGithub from '../components/skyline-github'
 
 const Page = () => {
@@ -20,9 +19,7 @@ const Page = () => {
     <Layout title="Home">
       <Section delay={0.1}>
         <Box align="center" my={4}>
-          <NoSsr>
-            <SkylineGithub />
-          </NoSsr>
+          <SkylineGithub />
         </Box>
       </Section>
       <Container>
