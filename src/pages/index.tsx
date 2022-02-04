@@ -1,21 +1,14 @@
-import {
-  Container,
-  Box,
-  Button,
-  Heading,
-  useColorModeValue
-} from '@chakra-ui/react'
+import { Container, Box } from '@chakra-ui/react'
 
 const Page = () => {
   return (
     <Container centerContent>
       <Box
-        borderRadius="lg"
         width={'100vw'}
         height={'100vh'}
-        bg={useColorModeValue('#6E8387', '#C8D3D5')}
+        bg={'#d81600'}
         align="center"
-        textColor={useColorModeValue('white', 'black')}
+        textColor={'white'}
       >
         FrontPage
       </Box>
