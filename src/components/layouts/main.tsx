@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import { useRouter } from 'next/router'
 import Navbar from '../navbar'
 import Footer from '../footer'
 import { Box, Container } from '@chakra-ui/react'
