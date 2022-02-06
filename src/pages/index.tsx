@@ -2,6 +2,7 @@ import { Container, Box, Slide, Button, useDisclosure } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import router from 'next/router'
 import { BsArrowDown } from 'react-icons/bs'
+import Brain from '../components/brain'
 
 const Page = () => {
   const { isOpen, onToggle } = useDisclosure()
@@ -14,8 +15,14 @@ const Page = () => {
   return (
     <Container centerContent>
       <Box width={'100vw'} height={'100vh'} align="center" textColor={'white'}>
-        <Box width={'100%'} height={'50%'}>
-          Welcome to my website
+        <Box
+          width={'100%'}
+          height={'50%'}
+          display={'flex'}
+          alignItems={'center'}
+          justifyContent={'center'}
+        >
+          <Brain />
         </Box>
         <Box
           width={'100%'}
