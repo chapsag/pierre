@@ -1,19 +1,22 @@
 import * as THREE from 'three'
-import { useCallback, useEffect, useRef, useState } from 'react'
-import { Spinner, Box } from '@chakra-ui/react'
+import { useEffect, useRef } from 'react'
+import { Box } from '@chakra-ui/react'
 
-let group
-let container
 const particlesData = []
-let camera, scene, renderer
-let positions, colors
-let particles
-let pointCloud
-let particlePositions
-let linesMesh
+let group: THREE.Group
+let container: HTMLDivElement
+let camera: THREE.PerspectiveCamera
+let scene: THREE.Scene
+let renderer: THREE.WebGLRenderer
+let positions: Float32Array
+let colors: Float32Array
+let particles: THREE.BufferGeometry
+let pointCloud: THREE.Points
+let particlePositions: Float32Array
+let linesMesh: THREE.LineSegments
 
-const maxParticleCount = 100
-let particleCount = 30
+const maxParticleCount = 60
+let particleCount = 45
 const r = 360
 const rHalf = r / 2
 
@@ -21,9 +24,9 @@ const effectController = {
   showDots: true,
   showLines: true,
   minDistance: 150,
-  limitConnections: false,
-  maxConnections: 20,
-  particleCount: 500
+  limitConnections: true,
+  maxConnections: 15,
+  particleCount: 45
 }
 
 function init(refContainer) {
@@ -130,8 +133,6 @@ function init(refContainer) {
   renderer.outputEncoding = THREE.sRGBEncoding
 
   container.appendChild(renderer.domElement)
-
-  //
 }
 
 function animate() {
@@ -230,30 +231,12 @@ function render() {
 
 const Network = () => {
   const refContainer = useRef<HTMLDivElement>(null)
-  const [loading, setLoading] = useState(false)
-
-  const handleWindowResize = useCallback(() => {
-    const { current: container } = refContainer
-    if (container && renderer) {
-      const scW = container.clientWidth
-      const scH = container.clientHeight
-
-      renderer.setSize(scW / 2, scH / 2)
-    }
-  }, [renderer])
 
   useEffect(() => {
-    init(refContainer.current)
+    const container = refContainer.current
+    init(container)
     animate()
   })
-
-  /* eslint-disable react-hooks/exhaustive-deps */
-  useEffect(() => {
-    window.addEventListener('resize', handleWindowResize, false)
-    return () => {
-      window.removeEventListener('resize', handleWindowResize, false)
-    }
-  }, [renderer, handleWindowResize])
 
   return <Box ref={refContainer} />
 }
