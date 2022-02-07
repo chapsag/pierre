@@ -7,7 +7,7 @@ import type { ColorMode } from '@chakra-ui/react'
 const styles = {
   global: (props: StyleFunctionProps) => ({
     body: {
-      bg: mode('#f0e7db', '#202023')(props)
+      bg: mode('#f0e7db', '#00000f')(props)
     }
   })
 }

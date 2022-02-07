@@ -2,7 +2,8 @@ import { Container, Box, Slide, Button, useDisclosure } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import router from 'next/router'
 import { BsArrowDown } from 'react-icons/bs'
-import Brain from '../components/brain'
+import Network from '../components/network'
+import { Text } from '@chakra-ui/react'
 
 const Page = () => {
   const { isOpen, onToggle } = useDisclosure()
@@ -22,11 +23,14 @@ const Page = () => {
           alignItems={'center'}
           justifyContent={'center'}
         >
-          <Brain />
+          <Network />
+        </Box>
+        <Box width={'100%'} height={'25%'} position="relative" zIndex={3}>
+          <Text fontSize="6xl">Hi, I am Pierre-Emmanuel</Text>
         </Box>
         <Box
           width={'100%'}
-          height={'50%'}
+          height={'25%'}
           display={'flex'}
           alignItems={'end'}
           justifyContent={'center'}
