@@ -7,7 +7,6 @@ import theme from '../lib/theme'
 import Fonts from '../lib/fonts'
 import { useEffect } from 'react'
 import TagManager from 'react-gtm-module'
-import { Container } from '@chakra-ui/react'
 
 const Portfolio = ({
   Component,

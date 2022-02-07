@@ -10,8 +10,9 @@ type MainProps = {
 }
 
 const Main = ({ children, router }: MainProps) => {
+  const showHeaderFooter = router.pathname === '/' ? false : true
   return (
-    <Box as="main" pb={8}>
+    <Box as="main">
       <Head>
         <title>Pierre-Emmanuel Goffi | Développeur Montréal</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -25,10 +26,10 @@ const Main = ({ children, router }: MainProps) => {
         />
         <meta name="author" content="Pierre-Emmanuel Goffi" />
       </Head>
-      <Navbar path={router.asPath} />
-      <Container maxW="container.md" pt={14}>
+      {showHeaderFooter && <Navbar path={router.asPath} />}
+      <Container maxW="100vw">
         {children}
-        <Footer />
+        {showHeaderFooter && <Footer />}
       </Container>
     </Box>
   )
