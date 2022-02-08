@@ -8,7 +8,7 @@ const Works = () => {
   return (
     <Layout title="Works">
       <Container>
-        <Heading as="h3" fontSize={20} mb={4}>
+        <Heading as="h3" fontSize={20} mb={4} paddingTop={[20, 0, 0, 0]}>
           Works
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
