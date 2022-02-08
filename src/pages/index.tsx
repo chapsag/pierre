@@ -26,7 +26,9 @@ const Page = () => {
           <Network />
         </Box>
         <Box width={'100%'} height={'25%'} position="relative" zIndex={3}>
-          <Text fontSize="6xl">Hi, I am Pierre-Emmanuel</Text>
+          <Text fontSize={['3xl', '5xl', '6xl', '6xl']}>
+            Hi, I am Pierre-Emmanuel
+          </Text>
         </Box>
         <Box
           width={'100%'}
