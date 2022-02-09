@@ -17,7 +17,7 @@ import SkylineGithub from '../components/skyline-github'
 const Page = () => {
   return (
     <Layout title="Home">
-      <Container pt={20}>
+      <Container>
         <Section delay={0.1}>
           <Box align="center" my={4}>
             <SkylineGithub />
