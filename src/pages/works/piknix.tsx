@@ -15,7 +15,7 @@ import Layout from '../../components/layouts/article'
 const Work = () => {
   return (
     <Layout title="piknix">
-      <Container>
+      <Container paddingTop={20}>
         <Title>
           piknix <Badge>2021</Badge>
         </Title>

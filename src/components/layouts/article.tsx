@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import Head from 'next/head'
 import { GridItemStyle } from '../grid/grid-item'
+import { Box } from '@chakra-ui/react'
 
 type LayoutProps = {
   children: React.ReactNode
@@ -22,7 +23,7 @@ const Layout = ({ children, title }: LayoutProps) => (
     transition={{ duration: 0.4, type: 'easeInOut' }}
     style={{ position: 'relative' }}
   >
-    <>
+    <Box pt={20}>
       {title && (
         <Head>
           <title>{title} - Pierre-Emmanuel Goffi</title>
@@ -30,7 +31,7 @@ const Layout = ({ children, title }: LayoutProps) => (
       )}
       {children}
       <GridItemStyle />
-    </>
+    </Box>
   </motion.article>
 )
 
