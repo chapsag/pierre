@@ -1,4 +1,4 @@
-import { Container, Box, Slide, Button, useDisclosure } from '@chakra-ui/react'
+import { Container, Box, Button } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import router from 'next/router'
 import { BsArrowDown } from 'react-icons/bs'
@@ -6,10 +6,7 @@ import Network from '../components/network'
 import { Text } from '@chakra-ui/react'
 
 const Page = () => {
-  const { isOpen, onToggle } = useDisclosure()
-
-  const handleSlide = () => {
-    onToggle()
+  const handleClick = () => {
     router.push('/me')
   }
 
@@ -36,6 +33,7 @@ const Page = () => {
           display={'flex'}
           alignItems={'end'}
           justifyContent={'center'}
+          backgroundColor={'black'}
         >
           <motion.div
             animate={{ y: 25 }}
@@ -45,12 +43,11 @@ const Page = () => {
               repeatType: 'reverse'
             }}
           >
-            <Button variant="ghost" onClick={handleSlide} mb={10}>
+            <Button variant="ghost" onClick={handleClick} mb={10}>
               <BsArrowDown size={26} />
             </Button>
           </motion.div>
         </Box>
-        <Slide direction="bottom" in={isOpen} style={{ zIndex: 10 }} />
       </Box>
     </Container>
   )
