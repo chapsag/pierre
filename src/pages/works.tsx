@@ -21,6 +21,13 @@ const Works = () => {
         <Section delay={0.1}>
           <Divider my={6} />
           <Heading as="h3" fontSize={20} mb={4}>
+            Side projects
+          </Heading>
+          <p>Coming soon 😇</p>
+        </Section>
+        <Section delay={0.1}>
+          <Divider my={6} />
+          <Heading as="h3" fontSize={20} mb={4}>
             Internship
           </Heading>
           <p>Coming soon 😇</p>
