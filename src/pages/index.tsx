@@ -69,7 +69,7 @@ const Page = () => {
           />
         </HStack>
         <Box
-          marginTop={['15%', '0', '0', '0']}
+          marginTop={['25%', '0', '0', '0']}
           width={'100%'}
           height={'30%'}
           display={'flex'}
