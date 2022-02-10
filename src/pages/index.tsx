@@ -69,6 +69,7 @@ const Page = () => {
           />
         </HStack>
         <Box
+          margin={10}
           width={'100%'}
           height={'30%'}
           display={'flex'}
