@@ -1,6 +1,6 @@
 import * as THREE from 'three'
 import { useEffect, useRef } from 'react'
-import { Box } from '@chakra-ui/react'
+import { Box, Container } from '@chakra-ui/react'
 
 const particlesData = []
 let group: THREE.Group
@@ -238,7 +238,16 @@ const Network = () => {
     animate()
   })
 
-  return <Box ref={refContainer} />
+  return (
+    <Container
+      centerContent
+      display={'flex'}
+      alignItems={'center'}
+      justifyContent={'center'}
+    >
+      <Box ref={refContainer} />
+    </Container>
+  )
 }
 
 export default Network
