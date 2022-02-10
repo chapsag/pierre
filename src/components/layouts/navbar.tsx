@@ -1,4 +1,4 @@
-import Logo from './logo'
+import Logo from '../logo'
 import NextLink from 'next/link'
 import {
   Container,
@@ -15,7 +15,6 @@ import {
   useColorModeValue
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
-import ThemeToggleButton from './theme-toggle-button'
 import { IoLogoGithub } from 'react-icons/io5'
 import { SiNotion } from 'react-icons/si'
 
@@ -134,13 +133,13 @@ const Navbar = (props: NavbarProps) => {
                 aria-label="Options"
               />
               <MenuList>
-                <NextLink href="/me" passHref>
+                <NextLink href="/" passHref>
                   <MenuItem as={Link}>Home</MenuItem>
                 </NextLink>
                 <NextLink href="/works" passHref>
                   <MenuItem as={Link}>Works</MenuItem>
                 </NextLink>
-                <NextLink href="https://github.com/chapsag/portfolio" passHref>
+                <NextLink href="https://github.com/chapsag/pierre" passHref>
                   <MenuItem as={Link}>View Source</MenuItem>
                 </NextLink>
               </MenuList>

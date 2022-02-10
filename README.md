@@ -43,7 +43,7 @@
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/chapsag/portfolio.git
+   git clone https://github.com/chapsag/pierre.git
    ```
 2. Install yarn packages
    ```sh

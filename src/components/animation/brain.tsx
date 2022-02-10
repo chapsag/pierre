@@ -1,6 +1,6 @@
 import React, { useRef, useMemo } from 'react'
-import { Canvas, ThreeEvent, useFrame } from '@react-three/fiber'
-import { OrbitControls, Stats, useHelper } from '@react-three/drei'
+import { Canvas, useFrame } from '@react-three/fiber'
+import { OrbitControls, useHelper } from '@react-three/drei'
 import { BoxHelper } from 'three'
 import * as THREE from 'three'
 
@@ -18,7 +18,7 @@ const CubeWithHelpers = () => {
 }
 
 const Node = () => {
-  let count = 100
+  let count = 200
   const nodeRef = useRef<THREE.InstancedMesh>()
   const lightRef = useRef<THREE.PointLight>()
 
@@ -90,7 +90,6 @@ const Brain = () => {
       <CubeWithHelpers />
       <Node />
       <OrbitControls />
-      <Stats />
     </Canvas>
   )
 }
