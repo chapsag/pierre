@@ -12,7 +12,7 @@ import Layout from '../components/layouts/article'
 import { BioSection, BioYear } from '../components/bio'
 import QRcode from '../components/qr-code'
 import NextLink from 'next/link'
-import SkylineGithub from '../components/skyline-github'
+import SkylineGithub from '../components/animation/skyline-github'
 
 const Page = () => {
   return (
