@@ -33,7 +33,7 @@ const Page = () => {
             align="center"
             textColor={useColorModeValue('white', 'black')}
           >
-            Hello, I&apos;m a Belgian developer based in Montreal, CA.
+            I&apos;m a Belgian developer based in Montreal, CA.
           </Box>
 
           <Box display={{ md: 'flex' }}>
@@ -64,7 +64,11 @@ const Page = () => {
             </Paragraph>
             <Box align="center" my={4}>
               <NextLink href="/works">
-                <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+                <Button
+                  rightIcon={<ChevronRightIcon />}
+                  colorScheme="witheAlpha"
+                  variant="outline"
+                >
                   My portfolio
                 </Button>
               </NextLink>

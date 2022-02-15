@@ -96,7 +96,7 @@ const Navbar = (props: NavbarProps) => {
           <LinkItem
             _target="_blank"
             rel="noopener noreferrer"
-            href="https://pear-avatar-310.notion.site/Pierre-Emmanuel-Goffi-df46b43694cc4df7bf72c70ab54e3119"
+            href="https://pe-goffi.notion.site/Pierre-Emmanuel-Goffi-46050919052a4096b82a31e1a6375260"
             path={path}
             display="inline-flex"
             alignItems="center"
