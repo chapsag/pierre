@@ -1,12 +1,11 @@
 import { Box, Container, Text, Grid, GridItem, Button } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
-import { Skills, Experience } from '../components/cv'
+import { Header, Skills, Experience, Title, Languages } from '../components/cv'
 
 const CV: React.FC = () => {
   return (
     <Layout title="C.V">
       <Container
-        className="cv"
         centerContent
         maxWidth={['100%', '100%', '70%', '70%']}
         height={['90vh', '100vh,', '250vh', '250vh']}
@@ -19,37 +18,7 @@ const CV: React.FC = () => {
           gap={4}
         >
           <GridItem colSpan={5} marginBottom={'15px'}>
-            <Box>
-              <Box>
-                <Text
-                  fontSize={['xx-small', 'xx-small', 'medium', 'xl']}
-                  display={{ base: 'flex', md: 'none', lg: 'none', xl: 'none' }}
-                  m={2}
-                >
-                  *This is not my full cv, but a summary of my skills and
-                  experience to serve for mobile. Please use a desktop browser
-                  to see the full cv.
-                </Text>
-              </Box>
-              <Text
-                fontSize={['2xl', '2xl', '4xl', '6xl']}
-                display={{ base: 'none', md: 'flex', lg: 'flex', xl: 'flex' }}
-              >
-                Pierre-Emmnauel Goffi
-              </Text>
-              <Text
-                fontSize={['small', 'small', 'medium', 'large']}
-                display={{ base: 'none', md: 'flex', lg: 'flex', xl: 'flex' }}
-              >
-                I am a Belgian developer with 2 years experience in IT industry.
-              </Text>
-              <Text
-                fontSize={['small', 'small', 'medium', 'large']}
-                display={{ base: 'none', md: 'flex', lg: 'flex', xl: 'flex' }}
-              >
-                I specialize myself in ia-enabled cloud applications.
-              </Text>
-            </Box>
+            <Header />
           </GridItem>
           <GridItem
             colSpan={6}
@@ -58,12 +27,10 @@ const CV: React.FC = () => {
             display={'flex'}
           >
             <Box width={'49%'}>
-              <Text fontSize={['xl', 'xl', '5xl', '5xl']} mb={4}>
-                Experience
-              </Text>
+              <Title>Experience</Title>
               <Experience
                 title="Co-Founder & Cloud Architect"
-                date="piknix, 2021 - Present"
+                subTitle="piknix, 2021 - Present"
                 list={[
                   'Coordinated a team of 4 developers to support development of our web application.',
                   'Worked closely with the CEO to get venture capital backing.',
@@ -75,7 +42,7 @@ const CV: React.FC = () => {
               />
               <Experience
                 title="Data Developer Intern"
-                date="Banque nationale,  August 2020 - December 2020"
+                subTitle="Banque nationale,  August 2020 - December 2020"
                 list={[
                   'Programmed reporting tools to help data scientist optimized their IA models in production.',
                   'Built data ingestion pipeline to optimize model training deployment by 8%.',
@@ -84,7 +51,7 @@ const CV: React.FC = () => {
               />
               <Experience
                 title="BI Developer Intern"
-                date="Banque nationale,  January 2020 - April 2020"
+                subTitle="Banque nationale,  January 2020 - April 2020"
                 list={[
                   'Programmed continuous deployment pipeline using Jenkins to optimize deployment of micro-services saving the organization 50+ dev hours per month.',
                   'Built a database test software using perl and python to enable versioning on sensitive data informations.',
@@ -93,9 +60,7 @@ const CV: React.FC = () => {
               />
             </Box>
             <Box width={'49%'} ml={10}>
-              <Text fontSize={['xl', 'xl', '5xl', '5xl']} mb={4}>
-                Skills
-              </Text>
+              <Title>Skills</Title>
               <Skills
                 title={'C++ (3 y)'}
                 list={[
@@ -130,12 +95,11 @@ const CV: React.FC = () => {
                 ]}
               />
               <Box
-                mb={4}
+                mb={10}
+                mt={10}
                 display={{ base: 'none', md: 'grid', lg: 'grid', xl: 'grid' }}
               >
-                <Text fontSize={['xl', 'xl', '5xl', '5xl']} mb={4} mt={10}>
-                  Education
-                </Text>
+                <Title>Education</Title>
                 <Text fontSize={['large', 'large', '2xl', '2xl']}>
                   Computer Vision
                 </Text>
@@ -150,35 +114,10 @@ const CV: React.FC = () => {
                 mb={4}
                 display={{ base: 'none', md: 'grid', lg: 'grid', xl: 'grid' }}
               >
-                <Text fontSize={['xl', 'xl', '5xl', '5xl']} mb={4} mt={10}>
-                  Languages
-                </Text>
-                <Text fontSize={['large', 'large', 'xl', 'xl']}>French</Text>
-                <Text
-                  as={'i'}
-                  fontSize={['small', 'small', 'medium', 'medium']}
-                >
-                  Native Speaker
-                </Text>
-
-                <Text fontSize={['large', 'large', 'xl', 'xl']} mt={2}>
-                  English
-                </Text>
-                <Text
-                  as={'i'}
-                  fontSize={['small', 'small', 'medium', 'medium']}
-                >
-                  Proficient
-                </Text>
-                <Text fontSize={['large', 'large', 'xl', 'xl']} mt={2}>
-                  Dutch/Mandarin
-                </Text>
-                <Text
-                  as={'i'}
-                  fontSize={['small', 'small', 'medium', 'medium']}
-                >
-                  Basic
-                </Text>
+                <Title>Languages</Title>
+                <Languages title={'French'} subTitle={'Native Speaker'} />
+                <Languages title={'English'} subTitle={'Proficient'} />
+                <Languages title={'Dutch/Mandarin'} subTitle={'Basic'} />
               </Box>
             </Box>
           </GridItem>
@@ -189,15 +128,13 @@ const CV: React.FC = () => {
             display={'flex'}
           >
             <Box width={'49%'}>
-              <Text fontSize={['xl', 'xl', '5xl', '5xl']} mb={5}>
-                Leadership
-              </Text>
+              <Title>Leadership</Title>
               <Text mt={7} fontSize={['large', 'large', '2xl', '2xl']}>
                 Canada 🇨🇦
               </Text>
               <Experience
                 title="Mentor at Technovation Montreal"
-                date="2021 - 2022"
+                subTitle="2021 - 2022"
                 list={[
                   'Technical mentor for a team of 6 girls.',
                   'Speaker: "How to make a good pitch ?", to teach how to sell your idea to VC.'
@@ -205,7 +142,7 @@ const CV: React.FC = () => {
               />
               <Experience
                 title="Centech Incubator program"
-                date="2021"
+                subTitle="2021"
                 list={[
                   'Selected to be part of Centech accelerator startup program.',
                   'Participated in the incubator program to develop a startup in the city of Montreal.'
@@ -213,7 +150,7 @@ const CV: React.FC = () => {
               />
               <Experience
                 title="Coordinator of the student association"
-                date="2019"
+                subTitle="2019"
                 list={[
                   'Coordinated student council and administration council.',
                   'Negotiated with faculty direction to uphold the students best interests.'
@@ -229,7 +166,7 @@ const CV: React.FC = () => {
               </Text>
               <Experience
                 title="Recipient of the price Corsica"
-                date="2015"
+                subTitle="2015"
                 list={[
                   'Won first place with my team amoung 15 Belgian college.',
                   'Assisted scientist in an oceanographic center for 2 weeks in Corsica.'
@@ -237,7 +174,7 @@ const CV: React.FC = () => {
               />
               <Experience
                 title="Recipient of the price Move With Africa"
-                date="2015"
+                subTitle="2015"
                 list={[
                   'Won an essay contest with my team amoung 30 Belgian college.',
                   'Participated in an exchange program of 3 weeks in Benin.'
