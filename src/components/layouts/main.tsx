@@ -11,6 +11,7 @@ type MainProps = {
 
 const Main = ({ children, router }: MainProps) => {
   const showHeaderFooter = router.pathname === '/' ? false : true
+  const showFooter = router.pathname === '/cv' ? false : true
   return (
     <Box as="main">
       <Head>
@@ -29,7 +30,7 @@ const Main = ({ children, router }: MainProps) => {
       {showHeaderFooter && <Navbar path={router.asPath} />}
       <Container maxW="100vw">
         {children}
-        {showHeaderFooter && <Footer />}
+        {showHeaderFooter || (showFooter && <Footer />)}
       </Container>
     </Box>
   )

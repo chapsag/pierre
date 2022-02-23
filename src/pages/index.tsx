@@ -37,10 +37,7 @@ const Page = () => {
           alignItems={'center'}
           justifyContent={'space-between'}
         >
-          <Contact
-            text="Curriculum Vitea"
-            href="https://pe-goffi.notion.site/Pierre-Emmanuel-Goffi-46050919052a4096b82a31e1a6375260"
-          />
+          <Contact text="Curriculum Vitea" href="/cv" />
           <Contact
             text="Linkedin"
             href="https://www.linkedin.com/in/pierre-emmanuel-goffi/"
@@ -57,7 +54,7 @@ const Page = () => {
         >
           <ContactOnMobile
             icon={<BsReverseLayoutTextWindowReverse size={20} />}
-            href="https://pear-avatar-310.notion.site/Pierre-Emmanuel-Goffi-df46b43694cc4df7bf72c70ab54e3119/"
+            href="/cv"
           />
           <ContactOnMobile
             icon={<RiLinkedinLine size={20} />}

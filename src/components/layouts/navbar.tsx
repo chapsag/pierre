@@ -96,14 +96,13 @@ const Navbar = (props: NavbarProps) => {
           <LinkItem
             _target="_blank"
             rel="noopener noreferrer"
-            href="https://pe-goffi.notion.site/Pierre-Emmanuel-Goffi-46050919052a4096b82a31e1a6375260"
+            href="/cv"
             path={path}
             display="inline-flex"
             alignItems="center"
             style={{ gap: 4 }}
             pl={2}
           >
-            <SiNotion />
             C.V
           </LinkItem>
           <LinkItem href="/works" path={path}>
@@ -138,6 +137,9 @@ const Navbar = (props: NavbarProps) => {
                 </NextLink>
                 <NextLink href="/works" passHref>
                   <MenuItem as={Link}>Works</MenuItem>
+                </NextLink>
+                <NextLink href="/cv" passHref>
+                  <MenuItem as={Link}>C.V</MenuItem>
                 </NextLink>
                 <NextLink href="https://github.com/chapsag/pierre" passHref>
                   <MenuItem as={Link}>View Source</MenuItem>

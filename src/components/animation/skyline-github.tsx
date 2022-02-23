@@ -106,8 +106,9 @@ const SkylineGithub = () => {
       maxH={['100', '200', '300']}
       maxW={['200', '400', '500']}
       position="relative"
-      border={['1px solid', '2px solid', '3px solid']}
+      border={['2px solid', '2px solid', '2px solid']}
       borderColor="gray.200"
+      borderRadius="md"
     >
       {loading && (
         <Spinner
