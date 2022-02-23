@@ -1,4 +1,4 @@
-import { Box, Container, Text, Grid, GridItem } from '@chakra-ui/react'
+import { Box, Container, Text, Grid, GridItem, Button } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import { Skills, Experience } from '../components/cv'
 
@@ -6,6 +6,7 @@ const CV: React.FC = () => {
   return (
     <Layout title="C.V">
       <Container
+        className="cv"
         centerContent
         maxWidth={['100%', '100%', '70%', '70%']}
         height={['90vh', '100vh,', '250vh', '250vh']}
@@ -27,7 +28,7 @@ const CV: React.FC = () => {
                 >
                   *This is not my full cv, but a summary of my skills and
                   experience to serve for mobile. Please use a desktop browser
-                  to see the full cv or download it here.
+                  to see the full cv.
                 </Text>
               </Box>
               <Text
@@ -96,21 +97,21 @@ const CV: React.FC = () => {
                 Skills
               </Text>
               <Skills
-                title={'C++ (3 years)'}
+                title={'C++ (3 y)'}
                 list={[
                   'Built image analysis softwares. (OpenGL)',
                   'Built distributed programs. (MPI)'
                 ]}
               />
               <Skills
-                title={'Python (2 years)'}
+                title={'Python (2 y)'}
                 list={[
                   'Built machine learning models. (Pytorch)',
                   'Built API. (FastApi)'
                 ]}
               />
               <Skills
-                title={'Typescript (2 years)'}
+                title={'Typescript (2 y)'}
                 list={[
                   'Built responsive web application. (React/Next)',
                   'Built reporting tools on AWS.',
@@ -221,7 +222,7 @@ const CV: React.FC = () => {
             </Box>
             <Box width={'49%'} ml={10}>
               <Text
-                mt={[0, '58px', '100px', '100px']}
+                mt={['58px', '58px', '100px', '100px']}
                 fontSize={['large', 'large', '2xl', '2xl']}
               >
                 Belgium 🇧🇪
