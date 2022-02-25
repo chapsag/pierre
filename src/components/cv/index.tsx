@@ -9,7 +9,7 @@ interface props {
 }
 
 const Paragraph = styled(Text)`
-  text-align: justify;
+  text-align: left;
   margin-right: 5em;
 `
 

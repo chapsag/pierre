@@ -6,16 +6,17 @@ const CV: React.FC = () => {
   return (
     <Layout title="C.V">
       <Container
-        centerContent
+        bg="white"
+        textColor={'black'}
+        borderRadius={10}
         maxWidth={['100%', '100%', '70%', '70%']}
-        height={['90vh', '100vh,', '250vh', '250vh']}
         fontWeight={1000}
       >
         <Grid
-          height={'80%'}
           templateRows="repeat(7, 1fr)"
           templateColumns="repeat(2, 1fr)"
           gap={4}
+          display={'inline'}
         >
           <GridItem colSpan={5} marginBottom={'15px'}>
             <Header />
@@ -158,10 +159,8 @@ const CV: React.FC = () => {
               />
             </Box>
             <Box width={'49%'} ml={10}>
-              <Text
-                mt={['58px', '58px', '100px', '100px']}
-                fontSize={['large', 'large', '2xl', '2xl']}
-              >
+              <Title>&nbsp;</Title>
+              <Text fontSize={['large', 'large', '2xl', '2xl']} mt={7}>
                 Belgium 🇧🇪
               </Text>
               <Experience
