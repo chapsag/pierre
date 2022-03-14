@@ -10,7 +10,7 @@ import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import Layout from '../components/layouts/article'
 import { BioSection, BioYear } from '../components/bio'
-import QRcode from '../components/qr-code'
+import Picture from '../components/picture'
 import NextLink from 'next/link'
 import SkylineGithub from '../components/animation/skyline-github'
 
@@ -43,7 +43,7 @@ const Page = () => {
               mr={{ md: 14 }}
               align="center"
             >
-              <QRcode />
+              <Picture />
             </Box>
             <Box flexGrow={1} align="center" pt={{ md: 5 }}>
               <Heading as="h2" variant="page-title">
