@@ -128,6 +128,7 @@ const Navbar = (props: NavbarProps) => {
                 icon={<HamburgerIcon />}
                 variant="outline"
                 aria-label="Options"
+                color={'#ffffff'}
               />
               <MenuList>
                 <NextLink href="/" passHref>

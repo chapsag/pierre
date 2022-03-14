@@ -23,12 +23,12 @@ export const Header: React.FC = () => {
     <Box>
       <Box>
         <Text
-          fontSize={['xx-small', 'xx-small', 'medium', 'xl']}
+          fontSize={['x-small', 'x-small', 'medium', 'xl']}
           display={{ base: 'flex', md: 'none', lg: 'none', xl: 'none' }}
           m={2}
         >
           *This is not my full cv, but a summary of my skills and experience to
-          serve for mobile. Please use a desktop browser to see the full cv.
+          serve for mobile.
         </Text>
       </Box>
       <Text
