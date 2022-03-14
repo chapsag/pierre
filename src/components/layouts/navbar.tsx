@@ -16,7 +16,6 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { IoLogoGithub } from 'react-icons/io5'
-import { SiNotion } from 'react-icons/si'
 
 type LinkItemProps = {
   path: string
@@ -42,7 +41,7 @@ const LinkItem = ({
   ...props
 }: LinkItemProps) => {
   const active = path === href
-  const inactiveColor = useColorModeValue('blackAlpha.900', 'whiteAlpha.900')
+  const inactiveColor = '#ffffff'
   return (
     <NextLink href={href} passHref>
       <Link
@@ -66,7 +65,7 @@ const Navbar = (props: NavbarProps) => {
       position="fixed"
       as="nav"
       w="100%"
-      bg={useColorModeValue('#ffffff40', '#20203080')}
+      bg={useColorModeValue('#20203080', '#20203080')}
       style={{ backdropFilter: 'blur(10px)' }}
       zIndex={1}
       {...props}
@@ -84,7 +83,6 @@ const Navbar = (props: NavbarProps) => {
             <Logo />
           </Heading>
         </Flex>
-
         <Stack
           direction={{ base: 'column', md: 'row' }}
           display={{ base: 'none', md: 'flex' }}

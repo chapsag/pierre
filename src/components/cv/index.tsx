@@ -35,7 +35,7 @@ export const Header: React.FC = () => {
         fontSize={['2xl', '2xl', '4xl', '6xl']}
         display={{ base: 'none', md: 'flex', lg: 'flex', xl: 'flex' }}
       >
-        Pierre-Emmnauel Goffi
+        Pierre-Emmanuel Goffi
       </Text>
       <Text
         fontSize={['small', 'small', 'medium', 'large']}

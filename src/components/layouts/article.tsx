@@ -23,7 +23,7 @@ const Layout = ({ children, title }: LayoutProps) => (
     transition={{ duration: 0.4, type: 'easeInOut' }}
     style={{ position: 'relative' }}
   >
-    <Box pt={20}>
+    <Box pt={20} color={'#ffffff'}>
       {title && (
         <Head>
           <title>{title} - Pierre-Emmanuel Goffi</title>

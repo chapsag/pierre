@@ -24,7 +24,13 @@ const Page = () => {
         >
           <Network />
         </Box>
-        <Box width={'100%'} marginBottom={5} position={'relative'} zIndex={3}>
+        <Box
+          width={'100%'}
+          marginBottom={5}
+          position={'relative'}
+          zIndex={3}
+          color={'#ffffff'}
+        >
           <Text fontSize={['2xl', '4xl', '6xl', '6xl']}>
             Hi, I am Pierre-Emmanuel
           </Text>
@@ -72,6 +78,7 @@ const Page = () => {
           display={'flex'}
           alignItems={'end'}
           justifyContent={'center'}
+          backgroundColor={'#000000'}
         >
           <motion.div
             animate={{ y: 25 }}
@@ -82,7 +89,7 @@ const Page = () => {
             }}
           >
             <Button variant={'ghost'} onClick={handleClick}>
-              <BsArrowDown size={26} />
+              <BsArrowDown size={26} color={'#ffffff'} />
             </Button>
           </motion.div>
         </Box>

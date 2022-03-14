@@ -1,4 +1,4 @@
-import { Box, Container, Text, Grid, GridItem, Button } from '@chakra-ui/react'
+import { Box, Container, Text, Grid, GridItem } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import { Header, Skills, Experience, Title, Languages } from '../components/cv'
 

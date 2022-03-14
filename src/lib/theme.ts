@@ -7,7 +7,7 @@ import type { ColorMode } from '@chakra-ui/react'
 const styles = {
   global: (props: StyleFunctionProps) => ({
     body: {
-      bg: mode('#f0e7db', '#000000')(props)
+      bg: mode('#000000', '#000000')(props)
     }
   })
 }
@@ -28,7 +28,7 @@ const components = {
   },
   Link: {
     baseStyle: (props: StyleFunctionProps) => ({
-      color: mode('#3d7aed', '#ffffff')(props),
+      color: mode('#ffffff', '#ffffff')(props),
       textUnderlineset: 3
     })
   }

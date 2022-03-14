@@ -47,7 +47,7 @@ const Page = () => {
             </Box>
             <Box flexGrow={1} align="center" pt={{ md: 5 }}>
               <Heading as="h2" variant="page-title">
-                Pierre-Emmanuel Goffi
+                Pierre-Emmanuel
               </Heading>
               <p>Cloud architect/developer</p>
             </Box>
